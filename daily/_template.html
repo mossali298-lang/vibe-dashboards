@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+  ═══════════════════════════════════════════════════════════
+  Daily report template · used by Claude Daily Research agent
+  ═══════════════════════════════════════════════════════════
+
+  Every day the agent:
+  1. cp daily/_template.html → daily/YYYY-MM-DD.html
+  2. Read + Edit the new file — replace every __TOKEN__ placeholder
+  3. Insert <article class="entry"> blocks BEFORE <!-- ENTRIES_INSERT_ABOVE -->
+  4. Update index.html via its own marker
+
+  PLACEHOLDER TOKENS (replace all of these):
+    __DATE_ISO__          e.g. 2026-04-24
+    __DATE_DOTTED__       e.g. 2026 · 04 · 24
+    __META_DESCRIPTION__  ≤ 80 chars summary
+    __HERO_EYEBROW__      e.g. "Day 002 · Research Reports"
+    __HERO_HEADLINE__     big serif headline, can include <em>
+    __HERO_SUBTITLE__     2-3 sentence intro
+    __STEP2_MINUTES__     integer
+    __WEBSEARCH_COUNT__   integer
+    __WEBFETCH_COUNT__    integer
+    __TOTAL_CANDIDATES__  integer
+    __KEPT_COUNT__        integer (= number of picks today)
+    __SUCCESS_SOURCES__   comma-joined list
+    __FAILED_SOURCES__    comma-joined list or "(none)"
+    __GENERATION_NOTE__   1-2 sentence transparency note
+
+  Do NOT remove <!-- ENTRIES_INSERT_ABOVE --> — it stays as anchor for Edits.
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>__DATE_ISO__ · Vibe-Dashboards Daily Research</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <meta name="description" content="__META_DESCRIPTION__">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Vibe<span>·</span>Dashboards</div>
+    <div class="header-meta">Daily Research · FP&amp;A Aesthetic Archive</div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="../index.html">← 返回目录</a> &nbsp;/&nbsp; <em>__DATE_ISO__</em>
+  </nav>
+</div>
+
+<section class="daily-hero">
+  <div class="container">
+    <span class="hero-eyebrow">__HERO_EYEBROW__</span>
+    <h1>__HERO_HEADLINE__</h1>
+    <p class="subtitle">__HERO_SUBTITLE__</p>
+    <div class="datestamp">__DATE_DOTTED__ · Asia/Shanghai</div>
+  </div>
+</section>
+
+<main>
+<section class="entries">
+<div class="container">
+
+<!-- ENTRIES_INSERT_ABOVE -->
+
+</div>
+</section>
+
+<div class="trends-wrap">
+  <div class="container">
+    <section class="trends">
+      <h2>Weekly · 本周趋势观察</h2>
+      <p>__TRENDS_PARAGRAPH__</p>
+    </section>
+  </div>
+</div>
+
+<div class="container">
+<section class="metadata">
+  <h3>调研元数据 · 本期透明度</h3>
+  <div class="metadata-grid">
+    <div class="m">调研耗时 <strong>__STEP2_MINUTES__<span>min</span></strong></div>
+    <div class="m">WebSearch <strong>__WEBSEARCH_COUNT__</strong></div>
+    <div class="m">WebFetch <strong>__WEBFETCH_COUNT__</strong></div>
+    <div class="m">候选 → 精选 <strong>__TOTAL_CANDIDATES__ → __KEPT_COUNT__</strong></div>
+  </div>
+  <div class="metadata-sources">
+    <strong>成功访问的源</strong>
+    __SUCCESS_SOURCES__
+    <strong>受限 / 失败源</strong>
+    __FAILED_SOURCES__
+    <strong>生成说明</strong>
+    __GENERATION_NOTE__
+  </div>
+</section>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>Vibe · Dashboards · <em style="font-style:italic">for an FP&amp;A audience</em></div>
+    <div><a href="../index.html">← Back to index</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
