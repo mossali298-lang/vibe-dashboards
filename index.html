@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vibe-Coded Dashboards · Daily Research</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <meta name="description" content="每日 vibe-coded dashboard 调研 — 聚焦 Apple Finance / Stripe / Linear 极简美学" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe-Dashboards · Daily Research Archive</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="每日精选数据可视化研究 — 研究报告、金融媒体图表、数据新闻的审美品味库，为 FP&A 而建">
 </head>
 <body>
 
@@ -16,50 +16,49 @@
   </div>
 </header>
 
-<main>
-  <section class="hero">
-    <div class="container">
-      <span class="hero-eyebrow">Aesthetic Intelligence</span>
-      <h1>Vibe-Coded Dashboards<br><em>Daily Research</em></h1>
-      <p>
-        每日精选 5–8 个真正由 AI 辅助生成的 dashboard 作品。
-        品味基线：<strong>Apple Finance · Stripe · Linear</strong> 极简克制风——
-        字体考究、色彩有层次、数据驱动、拒绝紫色渐变与阴影套娃。
-        面向小红书 FP&amp;A 的管理层预算 &amp; 财务 dashboard 审美库。
-      </p>
+<section class="index-hero">
+  <div class="container">
+    <span class="eyebrow">Daily Research · Aesthetic Archive</span>
+    <h1>给 FP&amp;A 的<br>数据可视化 <em>品味库</em></h1>
+    <p class="lead">
+      每天从研究报告、金融媒体图表、数据新闻里取样最值得一看的专业作品，带字体色值级别的点评。为管理层 dashboard 建立一个持续积累的审美参照系。
+    </p>
+    <p class="taste-line">
+      品味基线：<strong>Apple Finance · Stripe · Linear</strong> — 克制、数据驱动、字体考究、色彩有层次。<br>
+      绝对排斥：紫色渐变白底、科技蓝套路、卡片阴影套娃、默认 shadcn/Material 未改造样式。
+    </p>
+  </div>
+</section>
+
+<section class="catalog">
+  <div class="container">
+    <div class="catalog-header">
+      <h2>Archive</h2>
+      <span class="count">1 day · 6 picks · ongoing</span>
     </div>
-  </section>
 
-  <section class="dates-section">
-    <div class="container">
-      <h2>调研日志</h2>
-      <div class="date-grid">
+    <div class="day-cards">
 
-        <!-- 2026-04-23 -->
-        <a href="daily/2026-04-23.html" style="text-decoration:none;color:inherit;">
-          <article class="date-card">
-            <div class="date-card-date">2026 · 04 · 23</div>
-            <h3>Claude 设计技能崛起 &amp;<br>AI 财富仪表盘新范式</h3>
-            <div>
-              <span class="date-card-count">6 精选 · 8 次级发现</span>
-            </div>
-            <p style="font-size:0.83rem;color:var(--muted);line-height:1.55;">
-              Claude Code 前端设计技能终结「紫色渐变独裁」；Ignidash 开源财务规划仪表盘；
-              Vault 投资管理模板的 Plus Jakarta Sans + Geist Mono 组合；VoltAgent 69 个品牌设计系统库。
-            </p>
-            <div class="date-card-cta">阅读调研</div>
-          </article>
-        </a>
+      <a href="daily/2026-04-23.html" class="day-card">
+        <div class="day-date">2026 · 04 · 23</div>
+        <div class="day-title">研究报告与数据新闻 <em style="font-style:italic;color:var(--ink-2);">春季号</em></div>
+        <div class="day-count">6 picks · day 001</div>
+        <div class="day-preview">
+          <img src="assets/thumbs/2026-04-23/1.svg" alt="McKinsey">
+          <img src="assets/thumbs/2026-04-23/3.svg" alt="a16z">
+          <img src="assets/thumbs/2026-04-23/5.svg" alt="Pudding">
+        </div>
+        <div class="day-read">Read →</div>
+      </a>
 
-      </div>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="container">
-    <span>Vibe-Coded Dashboards Research</span>
-    <span>Powered by Claude Code · Updated daily (Asia/Shanghai)</span>
+    <div>Vibe · Dashboards · <em style="font-style:italic">for an FP&amp;A audience</em></div>
+    <div>Auto-updated daily at <strong style="color:var(--ink-2);">04:00 Asia/Shanghai</strong> · <a href="https://github.com/mossali298-lang/vibe-dashboards" target="_blank" rel="noopener">source</a></div>
   </div>
 </footer>
 

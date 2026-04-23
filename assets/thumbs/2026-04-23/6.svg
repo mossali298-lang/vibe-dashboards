@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="The Pudding — Infertility Journey: dual-perspective narrative">
+  <defs>
+    <style>
+      .ivf-bg     { fill: #f2f0ec; }
+      .ivf-serif  { font-family: 'Playfair Display', 'Source Serif Pro', Georgia, serif; }
+      .ivf-mono   { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+      .ivf-text   { fill: #1a1a1a; }
+      .ivf-muted  { fill: #73706c; }
+      .ivf-line-a { stroke: #2e5c5b; stroke-width: 2.8; fill: none; }
+      .ivf-line-b { stroke: #c56b85; stroke-width: 2.8; fill: none; }
+      .ivf-dot-a  { fill: #2e5c5b; }
+      .ivf-dot-b  { fill: #c56b85; }
+    </style>
+  </defs>
+
+  <rect class="ivf-bg" width="800" height="500"/>
+
+  <!-- Top brand -->
+  <text x="40" y="44" class="ivf-text ivf-mono" font-size="11" letter-spacing="3" font-weight="700">THE PUDDING · ESSAY #216</text>
+  <text x="760" y="44" class="ivf-text ivf-muted ivf-mono" font-size="10" text-anchor="end" letter-spacing="1.5">MAR · 2026</text>
+
+  <!-- Headline -->
+  <text x="40" y="102" class="ivf-text ivf-serif" font-size="38" font-weight="700" letter-spacing="-0.8">An interactive IVF journey,</text>
+  <text x="40" y="142" class="ivf-text ivf-serif" font-size="32" font-weight="400" font-style="italic" fill="#73706c">told from two perspectives</text>
+
+  <!-- Dual tracks -->
+  <g transform="translate(40,200)">
+    <!-- Track A (deep teal) -->
+    <text x="0" y="-8" class="ivf-text ivf-mono" font-size="10" letter-spacing="1.5" font-weight="700" fill="#2e5c5b">◆ PERSON A · YEAR 1 → YEAR 3</text>
+
+    <!-- Timeline line -->
+    <line x1="0" y1="22" x2="720" y2="22" class="ivf-line-a"/>
+    <!-- Milestones -->
+    <g class="ivf-dot-a">
+      <circle cx="40"  cy="22" r="7"/>
+      <circle cx="180" cy="22" r="9"/>
+      <circle cx="340" cy="22" r="7"/>
+      <circle cx="500" cy="22" r="11"/>
+      <circle cx="660" cy="22" r="8"/>
+    </g>
+    <g class="ivf-text ivf-mono" font-size="9" fill="#2e5c5b" text-anchor="middle">
+      <text x="40"  y="48">Diagnosis</text>
+      <text x="180" y="48">IUI · 2 cycles</text>
+      <text x="340" y="48">IVF · start</text>
+      <text x="500" y="48">Retrieval</text>
+      <text x="660" y="48">Transfer</text>
+    </g>
+
+    <!-- Track B (pink) -->
+    <text x="0" y="120" class="ivf-text ivf-mono" font-size="10" letter-spacing="1.5" font-weight="700" fill="#c56b85">◆ PERSON B · YEAR 1 → YEAR 4</text>
+
+    <line x1="0" y1="150" x2="720" y2="150" class="ivf-line-b"/>
+    <g class="ivf-dot-b">
+      <circle cx="90"  cy="150" r="8"/>
+      <circle cx="260" cy="150" r="7"/>
+      <circle cx="420" cy="150" r="10"/>
+      <circle cx="540" cy="150" r="7"/>
+      <circle cx="700" cy="150" r="12"/>
+    </g>
+    <g class="ivf-text ivf-mono" font-size="9" fill="#c56b85" text-anchor="middle">
+      <text x="90"  y="176">Testing</text>
+      <text x="260" y="176">Loss</text>
+      <text x="420" y="176">Re-start IVF</text>
+      <text x="540" y="176">Egg donor</text>
+      <text x="700" y="176">Birth</text>
+    </g>
+
+    <!-- Vertical connectors for parallel moments -->
+    <g stroke="#d8d5cf" stroke-dasharray="2 3" stroke-width="1">
+      <line x1="180" y1="29" x2="180" y2="142"/>
+      <line x1="340" y1="29" x2="340" y2="142"/>
+      <line x1="500" y1="29" x2="500" y2="142"/>
+    </g>
+  </g>
+
+  <!-- Legend + scroll cue -->
+  <g transform="translate(40,430)">
+    <text class="ivf-text ivf-serif" font-style="italic" font-size="14" fill="#73706c">Scroll to walk through two stories braided in time.</text>
+  </g>
+  <text x="760" y="476" class="ivf-text ivf-muted ivf-mono" font-size="9" text-anchor="end" letter-spacing="1.5">pudding.cool/ivf</text>
+</svg>

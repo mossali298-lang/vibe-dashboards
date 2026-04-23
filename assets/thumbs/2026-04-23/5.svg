@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="The Pudding — Happy Map: 100,000 moments of human happiness">
+  <defs>
+    <radialGradient id="pd-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#ffd166" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .pd-bg     { fill: #fff8ef; }
+      .pd-serif  { font-family: 'Playfair Display', 'Source Serif Pro', Georgia, serif; }
+      .pd-mono   { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+      .pd-text   { fill: #1a1a1a; }
+      .pd-muted  { fill: #8a7e6e; }
+      .pd-pink   { fill: #ef476f; }
+      .pd-blue   { fill: #118ab2; }
+      .pd-yellow { fill: #ffd166; }
+      .pd-green  { fill: #06a77d; }
+      .pd-purple { fill: #9d4edd; }
+    </style>
+  </defs>
+
+  <rect class="pd-bg" width="800" height="500"/>
+
+  <!-- Glow -->
+  <circle cx="400" cy="270" r="240" fill="url(#pd-glow)"/>
+
+  <!-- Top brand -->
+  <text x="40" y="44" class="pd-text pd-mono" font-size="11" letter-spacing="3" font-weight="700">THE PUDDING · ESSAY #215</text>
+  <text x="760" y="44" class="pd-text pd-muted pd-mono" font-size="10" text-anchor="end" letter-spacing="1.5">FEB · 2026</text>
+
+  <!-- Big headline -->
+  <text x="40" y="110" class="pd-text pd-serif" font-size="44" font-weight="700" letter-spacing="-1">100,000</text>
+  <text x="40" y="148" class="pd-text pd-serif" font-size="26" font-weight="400" font-style="italic">moments of human happiness,</text>
+  <text x="40" y="174" class="pd-text pd-serif" font-size="26" font-weight="400" font-style="italic">mapped.</text>
+
+  <!-- Abstract continent silhouettes -->
+  <g opacity="0.12" fill="#1a1a1a">
+    <!-- Americas -->
+    <path d="M 80 250 Q 100 220 120 235 L 140 250 Q 145 280 130 310 L 120 340 Q 100 355 90 330 Z"/>
+    <!-- Europe/Africa -->
+    <path d="M 340 230 Q 370 225 390 240 L 410 265 Q 420 300 405 340 L 385 370 Q 360 365 355 340 L 350 290 Q 340 265 340 230 Z"/>
+    <!-- Asia -->
+    <path d="M 520 220 Q 570 215 610 240 L 660 260 Q 680 285 665 310 L 620 330 Q 570 320 530 300 Q 510 275 520 220 Z"/>
+    <!-- Oceania -->
+    <path d="M 640 380 Q 680 375 695 390 L 690 415 Q 670 420 650 410 Z"/>
+  </g>
+
+  <!-- Scatter of happiness dots -->
+  <g>
+    <!-- Americas cluster -->
+    <circle cx="95"  cy="265" r="5" class="pd-yellow"/>
+    <circle cx="110" cy="285" r="4" class="pd-pink"/>
+    <circle cx="100" cy="310" r="6" class="pd-green"/>
+    <circle cx="125" cy="295" r="3" class="pd-blue"/>
+    <circle cx="130" cy="320" r="5" class="pd-purple"/>
+    <circle cx="90"  cy="295" r="4" class="pd-yellow"/>
+
+    <!-- Europe/Africa cluster -->
+    <circle cx="355" cy="250" r="5" class="pd-pink"/>
+    <circle cx="375" cy="270" r="6" class="pd-yellow"/>
+    <circle cx="390" cy="300" r="4" class="pd-blue"/>
+    <circle cx="370" cy="320" r="7" class="pd-green"/>
+    <circle cx="395" cy="345" r="5" class="pd-purple"/>
+    <circle cx="360" cy="295" r="4" class="pd-pink"/>
+    <circle cx="385" cy="260" r="3" class="pd-yellow"/>
+
+    <!-- Asia cluster -->
+    <circle cx="545" cy="245" r="6" class="pd-yellow"/>
+    <circle cx="575" cy="265" r="5" class="pd-pink"/>
+    <circle cx="600" cy="245" r="4" class="pd-green"/>
+    <circle cx="625" cy="275" r="8" class="pd-purple"/>
+    <circle cx="650" cy="295" r="5" class="pd-blue"/>
+    <circle cx="595" cy="300" r="4" class="pd-yellow"/>
+    <circle cx="560" cy="290" r="6" class="pd-pink"/>
+    <circle cx="620" cy="255" r="4" class="pd-green"/>
+
+    <!-- Oceania -->
+    <circle cx="660" cy="395" r="5" class="pd-pink"/>
+    <circle cx="680" cy="402" r="4" class="pd-blue"/>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(40,410)">
+    <text class="pd-text pd-mono" font-size="10" font-weight="700" letter-spacing="1.5" y="0">EMOTION · COLOUR-CODED</text>
+    <g transform="translate(0,18)" class="pd-mono" font-size="10">
+      <g>
+        <circle cx="6"   cy="6" r="5" class="pd-yellow"/>
+        <text x="18"  y="10" fill="#1a1a1a">joy</text>
+      </g>
+      <g transform="translate(70,0)">
+        <circle cx="6"   cy="6" r="5" class="pd-pink"/>
+        <text x="18"  y="10" fill="#1a1a1a">love</text>
+      </g>
+      <g transform="translate(150,0)">
+        <circle cx="6"   cy="6" r="5" class="pd-green"/>
+        <text x="18"  y="10" fill="#1a1a1a">peace</text>
+      </g>
+      <g transform="translate(240,0)">
+        <circle cx="6"   cy="6" r="5" class="pd-blue"/>
+        <text x="18"  y="10" fill="#1a1a1a">wonder</text>
+      </g>
+      <g transform="translate(340,0)">
+        <circle cx="6"   cy="6" r="5" class="pd-purple"/>
+        <text x="18"  y="10" fill="#1a1a1a">awe</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="760" y="476" class="pd-text pd-muted pd-mono" font-size="9" text-anchor="end" letter-spacing="1.5">pudding.cool/happy</text>
+</svg>

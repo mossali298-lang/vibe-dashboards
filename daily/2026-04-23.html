@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2026-04-23 · Vibe-Coded Dashboards Daily Research</title>
-  <link rel="stylesheet" href="../assets/style.css" />
-  <meta name="description" content="2026-04-23 每日 vibe-coded dashboard 调研：Claude 设计技能、Ignidash、Vault、VoltAgent 设计系统" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-04-23 · Vibe-Dashboards Daily Research</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <meta name="description" content="2026-04-23 专业数据可视化日报：研究报告 + 数据新闻精选 6 个 — McKinsey · CB Insights · a16z · Stanford HAI · The Pudding">
 </head>
 <body>
 
@@ -16,307 +16,221 @@
   </div>
 </header>
 
-<main>
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="../index.html">← 返回目录</a> &nbsp;/&nbsp; <em>2026-04-23</em>
+  </nav>
+</div>
+
+<section class="daily-hero">
   <div class="container">
-    <nav class="breadcrumb">
-      <a href="../index.html">← 返回目录</a> &nbsp;/&nbsp; 2026-04-23
-    </nav>
+    <span class="hero-eyebrow">Day 001 · Research Reports &amp; Data Journalism</span>
+    <h1>研究报告与数据新闻 <em>二〇二六春季</em></h1>
+    <p class="subtitle">
+      当 generic AI 样板还在满屏紫色渐变，真正的专业数据可视化一直在研究报告与编辑室里静静生长。今天从 McKinsey、CB Insights、a16z、Stanford HAI、The Pudding 取样，看克制与野心如何被同时做对。
+    </p>
+    <div class="datestamp">2026 · 04 · 23 · Asia/Shanghai</div>
   </div>
+</section>
 
-  <section class="daily-hero">
-    <div class="container">
-      <span class="hero-eyebrow">Day 001</span>
-      <h1>Claude 设计技能崛起<br><em>&amp; AI 财富仪表盘新范式</em></h1>
-      <div class="datestamp">2026 · 04 · 23 &nbsp;·&nbsp; Asia/Shanghai</div>
+<main>
+<section class="entries">
+<div class="container">
+
+<!-- ─── Entry 1: McKinsey ─── -->
+<article class="entry">
+  <div class="entry-body">
+    <div class="entry-number">01 / 06</div>
+    <div class="entry-title-row">
+      <h2><a href="https://www.mckinsey.com/mgi/our-research/mckinsey-global-institute-2025-in-charts" target="_blank" rel="noopener">McKinsey · 2025 in Charts</a></h2>
+      <span class="badge badge-star">★ 推荐</span>
+      <span class="badge badge-type">Research Report</span>
     </div>
-  </section>
+    <div class="entry-meta">出品方：<strong>McKinsey Global Institute (MGI)</strong></div>
+    <div class="entry-topic">五大主题定义 2025：人口、能源、劳动、地缘、生产率</div>
+    <ul class="entry-highlights">
+      <li>顶部 <code>#003A70</code> 海军蓝 6px 横条定调，整页 <code>#ffffff</code> 纯白基底做极静构图克制 —— 没有装饰元素、没有阴影、没有 hover 花活</li>
+      <li>Display 字体用 <strong>Georgia</strong> 衬线替代自家 Bower（网页版的妥协），小标 <strong>Helvetica Neue</strong> 无衬线 700 字重 + 1.2px 字距 ALL-CAPS</li>
+      <li>主色 <code>#0271DC</code> 明亮蓝配 <code>#B4D4F4 → #7BB3E8 → #3B8AD8</code> 六阶单色色阶 (tonal stack)，层级靠浓淡，不引入新颜色</li>
+      <li>5 个 small multiples 横向并排，每个宽仅约 140px 高 170px，强制每张图阅读时间 ≤ 5 秒 —— 信息密度与阅读节奏的工程化克制</li>
+      <li>坐标系只保留 x 年份刻度，y 轴用数据标签代替 gridline，边框全无仅留最淡 <code>#e5ebf1</code> hairline —— 视觉负担降到极限</li>
+    </ul>
+    <div class="rating"><span class="rating-label">审美评分</span><span class="stars">★★★★★</span></div>
+  </div>
+  <figure class="entry-thumb">
+    <img src="../assets/thumbs/2026-04-23/1.svg" alt="McKinsey 2025 in Charts 五主题面板">
+    <figcaption class="caption">SVG 致敬 MGI 五主题 small multiples · 线条、色阶、字体复现其 Visual Design 语言</figcaption>
+  </figure>
+</article>
 
-  <!-- ═══════════════════════ ENTRIES ═══════════════════════ -->
-  <section class="entries">
-    <div class="container">
-
-      <!-- ─── Entry 1 ─── -->
-      <article class="entry">
-        <div class="entry-number">01 / 06</div>
-        <div class="entry-title-row">
-          <h2>Claude Code Frontend Design Skill</h2>
-          <span class="badge badge-star">★ 推荐</span>
-          <span class="badge badge-tool">Claude Code Plugin</span>
-        </div>
-        <div class="entry-meta">
-          来源：<strong>Anthropic / GitHub</strong> &nbsp;·&nbsp;
-          作者：<strong>Anthropic 官方</strong> &nbsp;·&nbsp;
-          链接：<a href="https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design" target="_blank">github.com/anthropics/claude-code</a>
-        </div>
-        <ul class="entry-highlights">
-          <li>这不是一个 dashboard 本身，而是 2026 最重要的 vibe-code 元工具——Anthropic 官方的前端设计技能插件，277,000+ installs，彻底改变了 AI 生成界面的默认美学。</li>
-          <li>核心机制：编码前先声明「审美方向」（极简主义、编辑风格、奢华暗黑、复古未来等），不允许直接扑向 shadcn 默认样式。</li>
-          <li>明确的字体禁令：Inter / Roboto / Arial / Space Grotesk 都被列为「陈词滥调」；推荐选择有个性的展示字体配精致正文字体。</li>
-          <li>颜色禁令：白底紫渐变、过度平均分配的胆小调色板被标注为反模式；推荐主色 + 锐利点缀色的层次结构。</li>
-          <li>Ethan Mollick（沃顿教授）在 X 上评价："ends the purple gradient and Arial font tyranny"，并表示已用它重设计了所有 vibe-coded 应用。这条推文引爆了 2026 年初前端 AI 设计讨论。</li>
-        </ul>
-        <div class="rating">
-          <span class="rating-label">审美评分</span>
-          ★★★★★
-        </div>
-        <p style="font-size:0.82rem;color:var(--muted);font-style:italic;">
-          Meta-find：本身没有可截图的 UI，但它是所有「好看的 vibe-coded dashboard」背后的底层规则引擎。
-          任何认真做 AI 生成界面的 FP&A 都应该了解这套约束体系。
-        </p>
-      </article>
-
-      <!-- ─── Entry 2 ─── -->
-      <article class="entry">
-        <div class="entry-number">02 / 06</div>
-        <div class="entry-title-row">
-          <h2>Ignidash — Open-Source AI Finance Simulator</h2>
-          <span class="badge badge-star">★ 推荐</span>
-          <span class="badge badge-tool">Next.js + Azure OpenAI</span>
-          <span class="badge badge-source">HN Show HN · Jan 2026</span>
-        </div>
-        <div class="entry-meta">
-          来源：<strong>Hacker News Show HN</strong> (Jan 20, 2026) &nbsp;·&nbsp;
-          作者：<strong>schelskedev</strong> &nbsp;·&nbsp;
-          链接：<a href="https://github.com/schelskedevco/ignidash" target="_blank">github.com/schelskedevco/ignidash</a>
-        </div>
-        <ul class="entry-highlights">
-          <li>开源 ProjectionLab 替代品——长期个人财务规划仪表盘，亮暗双主题，专为 FP&A 类用户设计的蒙特卡洛模拟 + 历史回测可视化。</li>
-          <li>技术栈：Next.js 16 / React 19 / TypeScript / Tailwind CSS / Convex（实时数据库）/ Azure OpenAI，定价约 $5/月。</li>
-          <li>设计亮点：亮色版采用纸白底色 + 深墨色文字 + 蓝绿色图表；暗色版近黑底 + 高对比度折线图。布局遵循 Stripe-style 左侧导航 + 右侧数据密集区结构。</li>
-          <li>AI 对话层嵌入财务预测界面——可直接问「如果我推迟退休 3 年，胜率提高多少」。这种 chat-over-data 模式是 2026 年 FP&A 工具的核心范式。</li>
-          <li>美中不足：字体仍用 Tailwind 默认 sans（很可能是 Inter），缺乏 display serif 的质感，但整体数据密度与布局克制程度符合本栏审美基线。</li>
-        </ul>
-        <div class="rating">
-          <span class="rating-label">审美评分</span>
-          ★★★★☆
-        </div>
-        <figure>
-          <img
-            src="https://raw.githubusercontent.com/schelskedevco/ignidash/main/public/screenshots/simulator-light.webp"
-            alt="Ignidash simulator - light theme"
-            class="entry-image"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
-          />
-          <p class="image-caption" style="display:none;">截图加载失败 · 查看原仓库</p>
-          <figcaption class="image-caption">亮色主题模拟器视图 · 来源：GitHub README</figcaption>
-        </figure>
-      </article>
-
-      <!-- ─── Entry 3 ─── -->
-      <article class="entry">
-        <div class="entry-number">03 / 06</div>
-        <div class="entry-title-row">
-          <h2>Vault Dashboard — Investment Admin Template</h2>
-          <span class="badge badge-star">★ 推荐</span>
-          <span class="badge badge-tool">Next.js 16 + shadcn/ui</span>
-        </div>
-        <div class="entry-meta">
-          来源：<strong>DashboardPack / UI8</strong> &nbsp;·&nbsp;
-          作者：<strong>Capricorn Build</strong> &nbsp;·&nbsp;
-          链接：<a href="https://dashboardpack.com/theme-details/vault-dashboard/" target="_blank">dashboardpack.com/vault-dashboard</a>
-        </div>
-        <ul class="entry-highlights">
-          <li>这是 2026 年少数在字体选择上真正克制的投资仪表盘模板：正文使用 <strong>Plus Jakarta Sans</strong>（线条感优雅，远好于 Inter）+ 数字/代码区域用 <strong>Geist Mono</strong>（Vercel 自研等宽，现代感强）。</li>
-          <li>色板：Robinhood-style 近白底 + 墨绿色涨跌标注 + 中性灰边框，完全回避了「科技蓝」和「紫渐变」套路。</li>
-          <li>57+ 页面覆盖 Portfolio、Watchlist、Earnings Calendar、Dividends、Tax Center 等财务场景；125+ 静态路由，生产级完成度。</li>
-          <li>Storybook 组件库 + 15 个交互故事，图表懒加载 + IntersectionObserver，性能取向而非「酷炫动效」——这与 Stripe Dashboard 哲学高度一致。</li>
-          <li>Tailwind CSS v4 + React 19——当前最新技术栈，可作为 FP&A dashboard 的工程参考标准。</li>
-        </ul>
-        <div class="rating">
-          <span class="rating-label">审美评分</span>
-          ★★★★☆
-        </div>
-        <p style="font-size:0.82rem;color:var(--muted);font-style:italic;">
-          注：此模板并非 AI 「一键生成」，而是 AI 工具辅助开发的精工模板。
-          代表了「好的 vibe-code 目标态」：工程与美学都到位。
-        </p>
-      </article>
-
-      <!-- ─── Entry 4 ─── -->
-      <article class="entry">
-        <div class="entry-number">04 / 06</div>
-        <div class="entry-title-row">
-          <h2>VoltAgent / awesome-design-md</h2>
-          <span class="badge badge-star">★ 推荐</span>
-          <span class="badge badge-tool">Claude / Cursor 通用</span>
-          <span class="badge badge-source">GitHub Trending</span>
-        </div>
-        <div class="entry-meta">
-          来源：<strong>GitHub / VoltAgent</strong> &nbsp;·&nbsp;
-          作者：<strong>VoltAgent Team</strong> &nbsp;·&nbsp;
-          链接：<a href="https://github.com/VoltAgent/awesome-design-md" target="_blank">github.com/VoltAgent/awesome-design-md</a>
-        </div>
-        <ul class="entry-highlights">
-          <li>69 个品牌级 DESIGN.md 文件库——把 Stripe、Revolut、Wise、Apple、Vercel、Linear 等顶级产品的视觉语言提炼为 AI 可读格式，一键注入项目即可生成品牌匹配 UI。</li>
-          <li>金融/分析类品牌设计系统：Stripe、Revolut、Wise、Binance、Coinbase、Kraken、Mastercard、PostHog 均在列——这正是 FP&A dashboard 审美的参照系原型。</li>
-          <li>开发工具设计系统：Vercel（冷白 + Geist）、Linear（极简暗黑 + 密集 Typography Hierarchy）、Cursor、Supabase——覆盖了用户偏好的「Linear 极简风」源头。</li>
-          <li>使用方式极为克制：一个 Markdown 文件 → drop into CLAUDE.md → AI 生成时自动遵循设计语言，无需重复描述字体/颜色规则。</li>
-          <li>与本栏调研直接可用：明天做 dashboard 时，把 <code>stripe.md</code> 或 <code>linear.md</code> drop 进去，可以直接生成符合审美基线的界面。</li>
-        </ul>
-        <div class="rating">
-          <span class="rating-label">审美评分</span>
-          ★★★★★
-        </div>
-        <p style="font-size:0.82rem;color:var(--muted);font-style:italic;">
-          这是一个「元设计工具」而非单一作品，但对 FP&A 做 AI dashboard 的实用价值极高。
-          配合 Claude Code Frontend Design Skill，可以系统性杜绝「AI 生成糊感」。
-        </p>
-      </article>
-
-      <!-- ─── Entry 5 ─── -->
-      <article class="entry">
-        <div class="entry-number">05 / 06</div>
-        <div class="entry-title-row">
-          <h2>Chris Lee — Vibe-Coded Wealth Dashboard</h2>
-          <span class="badge badge-tool">Claude Code + Plaid</span>
-          <span class="badge badge-source">X / Twitter · Apr 2026</span>
-        </div>
-        <div class="entry-meta">
-          来源：<strong>X (@techcontrarian)</strong> &nbsp;·&nbsp;
-          作者：<strong>Chris Lee</strong> &nbsp;·&nbsp;
-          链接：<a href="https://x.com/techcontrarian/status/2036319668177416504" target="_blank">x.com/techcontrarian/status/2036…</a>
-        </div>
-        <ul class="entry-highlights">
-          <li>Claude 作为「财富顾问」——用 Claude Code vibe-coded 一个私人网站，通过 Plaid 接入近 10 年收入/支出历史 + 股票交易记录，AI 层做实时财务分析和建议。</li>
-          <li>这正是 2026 年 FP&A dashboard 的新范式：不再是「展示数据的看板」，而是「可对话的财务顾问界面」——数据 + AI + 实时 API 三合一。</li>
-          <li>类似开源实现（github.com/mkash25/Claude-powered-AI-native-financial-dashboard）：Next.js + Tailwind + Supabase + Python 数据管道，$5/月 Claude API 成本，跑 RSI/MACD/布林带 + 基本面 + 新闻聚合后生成 buy/hold/sell 建议。</li>
-          <li>设计上：私人项目，无公开设计截图，但原推图片显示数据密集的暗色主界面 + 左侧账户导航 + 中央净资产折线图，整体克制专业。</li>
-          <li>警示：「私人财务 dashboard」这类项目需要特别注意 Plaid API 权限范围与数据本地化——不适合团队共享或企业部署，但作为个人 FP&A 工具极具参考价值。</li>
-        </ul>
-        <div class="rating">
-          <span class="rating-label">审美评分</span>
-          ★★★☆☆
-        </div>
-        <p style="font-size:0.82rem;color:var(--muted);font-style:italic;">
-          设计评分保守（无公开完整截图），但作为「AI 财务仪表盘」的产品形态参考价值极高。
-          Claude Code + Plaid 的组合值得追踪。
-        </p>
-      </article>
-
-      <!-- ─── Entry 6 ─── -->
-      <article class="entry">
-        <div class="entry-number">06 / 06</div>
-        <div class="entry-title-row">
-          <h2>Revlytics — SaaS 财务分析仪表盘</h2>
-          <span class="badge badge-tool">Lovable</span>
-          <span class="badge badge-source">Made with Lovable</span>
-        </div>
-        <div class="entry-meta">
-          来源：<strong>madewithlovable.com</strong> &nbsp;·&nbsp;
-          作者：<strong>Revlytics Team</strong> &nbsp;·&nbsp;
-          链接：<a href="https://revlytics.lovable.app/" target="_blank">revlytics.lovable.app</a>
-        </div>
-        <ul class="entry-highlights">
-          <li>用 Lovable 生成的完整 SaaS 财务分析平台，覆盖 MRR、ARR、客户 LTV、Churn Rate、Failed Payments、Revenue Forecast——财务侧指标全覆盖。</li>
-          <li>UI 亮点：KPI 卡片用绿/红趋势指示器 + 迷你 sparkline 图表（1行内显示趋势），12 个月 MRR 折线图 + 新增/流失用户堆叠柱状图——数据密度与可读性平衡得不错。</li>
-          <li>颜色系统：浅灰底 + 墨色文字 + 绿色正向指标 / 红色负向指标，标准但不廉价——至少没有「科技蓝卡片阴影套娃」问题。</li>
-          <li>Lovable 生成的最大局限：字体仍是默认 sans-serif stack，缺乏品味；组件间距和 font-size hierarchy 略显机械。</li>
-          <li>作为 FP&A 同类工具参考：这基本是「好用但不够好看」的水平——功能完整度 ★★★★★，视觉品味 ★★★。对比 Stripe Dashboard 还有明显差距。</li>
-        </ul>
-        <div class="rating">
-          <span class="rating-label">审美评分</span>
-          ★★★☆☆
-        </div>
-        <p style="font-size:0.82rem;color:var(--muted);font-style:italic;">
-          代表了 2026 年 Lovable 生成界面的典型水平：功能强，但未经「前端设计 Skill」处理就还是偏通用。
-          对 FP&A 用户有直接功能参考价值。
-        </p>
-      </article>
-
+<!-- ─── Entry 2: CB Insights ─── -->
+<article class="entry">
+  <div class="entry-body">
+    <div class="entry-number">02 / 06</div>
+    <div class="entry-title-row">
+      <h2><a href="https://www.cbinsights.com/research/report/ai-trends-q1-2026/" target="_blank" rel="noopener">CB Insights · State of AI Q1'26</a></h2>
+      <span class="badge badge-type">Research Report</span>
     </div>
-  </section>
+    <div class="entry-meta">出品方：<strong>CB Insights Research</strong></div>
+    <div class="entry-topic">$226B AI 融资 Q1'26，同比 +216%，mega-round 占 94%</div>
+    <ul class="entry-highlights">
+      <li>深黑 <code>#0e0e10</code> 整页基底 + 橙 <code>#FF6A00</code> 单一信号色 — 全页仅 4 处用到（Q1 tag、Q1'26 bar、callout label、percent delta），稀缺感让橙色真的成为"焦点"</li>
+      <li>Display 字体是 <strong>Times / 衬线</strong> 画 "$226B" 做 80+ 号电视新闻式震撼，正文转 <strong>Helvetica Neue</strong> 14px 做对比</li>
+      <li>数据字符全部用 <strong>SF Mono / JetBrains Mono</strong> 等宽，保证 <code>$52B → $72B → $226B</code> 对齐整齐、可比性强</li>
+      <li>柱状图用 <code>#555 → #777 → #999 → #bbb</code> 单色灰阶画前 4 个季度，Q1'26 一次性上橙色并且高度是第二名的 2.5×，强烈视觉事件</li>
+      <li>底部 3 列 callout 卡 <code>#1a1a1c</code> 微亮浮起 + <code>#3a3a3d</code> hairline，label 橙色 ALL-CAPS 10px 字距 1.4 — 克制但每格都有"仪表盘终端"的专业感</li>
+    </ul>
+    <div class="rating"><span class="rating-label">审美评分</span><span class="stars">★★★★★</span></div>
+  </div>
+  <figure class="entry-thumb">
+    <img src="../assets/thumbs/2026-04-23/2.svg" alt="CB Insights State of AI Q1 2026">
+    <figcaption class="caption">SVG 致敬 CB Insights 黑橙 terminal-financial 设计语言</figcaption>
+  </figure>
+</article>
 
-  <!-- ═══════════════════════ SECONDARY FINDINGS ═══════════════════════ -->
-  <section class="secondary">
-    <div class="container">
-      <h4>次级发现</h4>
-      <h2>今日扫描其他值得记录的线索</h2>
-      <ul class="secondary-list">
-        <li>
-          <strong>v0 Financial Dashboard - Functional</strong>（v0.dev/community/jUBqSBJsNrz）—— v0 社区最热 18,700+ forks 的财务仪表盘模板，shadcn/ui 标准组件，可作为快速原型起点，但需叠加设计 skill 改造美学。
-        </li>
-        <li>
-          <strong>Show HN: Simple Stripe Analytics Dashboard</strong>（HN #47286883 · Mar 9, 2026）—— 单页展示 MRR/ARR/Churn/LTV/Failed Payments，纯客户端无数据离境，$19/mo 定价讨论中。Stripe-adjacent 极简风，值得关注。
-        </li>
-        <li>
-          <strong>Show HN: Valuepulse</strong>（HN #47802054 · Apr 17, 2026）—— 将文档搜索、数据查询、仪表盘构建整合为一体的平台，约 6 天前发布，讨论热度较高，产品方向与 FP&A 场景吻合。
-        </li>
-        <li>
-          <strong>VoltAgent/awesome-claude-design</strong>（github.com/VoltAgent/awesome-claude-design）—— 68 个即用设计系统灵感的 DESIGN.md，专门优化为 Claude 格式，是 awesome-design-md 的 Claude 特化版本。
-        </li>
-        <li>
-          <strong>GitHub wilwaldon/Claude-Code-Frontend-Design-Toolkit</strong> —— 汇集了「真正让 Claude Code 输出更好看前端」的 Skills、Plugins、MCP servers、CLAUDE.md tricks 和 127 个字体配对方案。
-        </li>
-        <li>
-          <strong>Ignidash 开源替代 ProjectionLab</strong> —— Monte Carlo + 历史回测 + 美国税收估算 + AI 对话，技术侧最接近「机构级个人财务规划工具」，Next.js 16 全栈可自托管。
-        </li>
-        <li>
-          <strong>Awwwards 近期数据可视化新进</strong>：Language Explorer（SOTD Jan 2026）、The State of AI at Work（HM Feb 2026）、aino.agency（HM Apr 14, 2026）—— 均为叙事型数据可视化，暂非 dashboard 范畴，记录备查。
-        </li>
-        <li>
-          <strong>2026 字体趋势（Typewolf Top 10 Serif）</strong>：Playfair Display、Cormorant Garamond、DM Serif Display、Source Serif 4 等依然领跑财务/编辑美学；
-          IBM Plex Sans 在数据密集界面中依然是最克制的 sans 选择之一。
-        </li>
-      </ul>
+<!-- ─── Entry 3: a16z ─── -->
+<article class="entry">
+  <div class="entry-body">
+    <div class="entry-number">03 / 06</div>
+    <div class="entry-title-row">
+      <h2><a href="https://a16z.com/state-of-ai/" target="_blank" rel="noopener">a16z · State of AI — 100 trillion tokens</a></h2>
+      <span class="badge badge-star">★ 推荐</span>
+      <span class="badge badge-type">Research Report</span>
     </div>
-  </section>
+    <div class="entry-meta">出品方：<strong>Andreessen Horowitz</strong> · 数据合作 OpenRouter · 300+ 模型 · 60+ 供应商</div>
+    <div class="entry-topic">LLM token 年产量从 10T 跳到 100T+，每日 1T，AI "从实验变为基础设施"</div>
+    <ul class="entry-highlights">
+      <li>米白 <code>#f5f1e8</code> 自然纸感底 + 真黑 <code>#1a1a1a</code> 曲线 — 这个 palette 不是"软极简"，是"老派文献"的气质，和硅谷常见亮白刺眼 Tailwind 风正相反</li>
+      <li>Display 用 <strong>Georgia 衬线</strong> 38px "100 trillion tokens, a year"，正文/小注 <strong>Helvetica Neue</strong> 11px 大写字距 2px，两套字体系统做头条/数据的情绪分离</li>
+      <li>主体曲线 2.6-3px 线宽深黑，下方线下渐变 <code>rgba(26,20,16, 0.18 → 0)</code> 克制暗示体量、不抢视觉，是数据可视化的"安静的份量感"</li>
+      <li>Grid 只保留 4 条水平虚线 <code>#d9d2c3 dashed 2/4</code>，无垂直 gridline，x 轴年份用 mono 小字悬空标注</li>
+      <li>关键终点用 5r 实心圆 + 2px 纸底色 halo 凸出，引出 "TODAY · ~1T / DAY" callout 的 leader line 是一根普通水平线 — 没有花哨箭头，克制到极致</li>
+    </ul>
+    <div class="rating"><span class="rating-label">审美评分</span><span class="stars">★★★★★</span></div>
+  </div>
+  <figure class="entry-thumb">
+    <img src="../assets/thumbs/2026-04-23/3.svg" alt="a16z State of AI — 100 trillion tokens growth curve">
+    <figcaption class="caption">SVG 致敬 a16z 文献式单线增长 · 米白 + 真黑的 "安静的份量感"</figcaption>
+  </figure>
+</article>
 
-  <!-- ═══════════════════════ WEEKLY TRENDS ═══════════════════════ -->
-  <section class="trends">
-    <div class="container">
-      <h4>本周趋势</h4>
-      <h2>第一周观察：AI 界面审美正在分化</h2>
-      <div class="trends-body">
-        <p>
-          2026 年 4 月，vibe-coded dashboard 正经历一场「审美分化」：一边是 Lovable / bolt.new 批量产出的「功能完整但视觉平庸」的 shadcn 默认风，另一边是 Claude Code Frontend Design Skill（277K installs）、VoltAgent DESIGN.md 库等「元工具」正在系统性地改变 AI 生成 UI 的默认美学。Ethan Mollick 称之为「终结紫色渐变与 Arial 字体独裁」——这不是夸张，而是一场真实发生的品味迭代。
-        </p>
-        <p style="margin-top:0.75rem;">
-          对 FP&A 用户来说，最值得关注的是「对话层覆盖数据层」的产品范式——Chris Lee 的 Plaid + Claude 私人财富仪表盘、Ignidash 的 Monte Carlo + AI 问答、Revlytics 的 AI 预测建议，都指向同一个方向：管理层 dashboard 的下一步不是更漂亮的图表，而是可以直接问「这个 budget variance 怎么解释」的 AI 界面。这是小红书 FP&A 需要提前布局的产品形态。
-        </p>
-      </div>
+<!-- ─── Entry 4: Stanford AI Index ─── -->
+<article class="entry">
+  <div class="entry-body">
+    <div class="entry-number">04 / 06</div>
+    <div class="entry-title-row">
+      <h2><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener">Stanford HAI · AI Index Report 2026</a></h2>
+      <span class="badge badge-star">★ 推荐</span>
+      <span class="badge badge-type">Research Report</span>
     </div>
-  </section>
+    <div class="entry-meta">出品方：<strong>Stanford HAI</strong> (Human-Centered AI Institute) · 9 章 · 300+ 图表</div>
+    <div class="entry-topic">US $285.9B vs China $12.4B 私人 AI 投资的 23 倍落差</div>
+    <ul class="entry-highlights">
+      <li>顶部 Stanford cardinal <code>#8C1515</code> 40px 纯色条做学术权威锚点 — 不是广告色的 primary 红，是美式大学徽章的深枣红，自带严肃感</li>
+      <li>Display 用 <strong>Source Serif Pro</strong> 衬线做数字（$285.9B 用 30px+）和章节标题（32px weight 400 斜体可选），正文/小注 Helvetica Neue</li>
+      <li>对比 bar 用主色 <code>#8C1515</code> 画 US，然后 <code>#c75a5a</code> 同色系降饱和 60% 画 UK/China/ROW — 形成 hierarchy 而非色彩冲突，是"同一家族不同身份"的处理手法</li>
+      <li>每行 bar 宽度真实比例锚定 ($285.9B 顶满 720px, $12.4B 仅 32px)，不做视觉平衡妥协，让不对称本身成为信息</li>
+      <li>底部 "5,427 data centers / 362 incidents / SWE-bench 60%→100%" 三列 grid，label 用 Helvetica 10px 字距 1.2 ALL-CAPS，数字用 Source Serif 22px — 学术年报标准格式</li>
+    </ul>
+    <div class="rating"><span class="rating-label">审美评分</span><span class="stars">★★★★★</span></div>
+  </div>
+  <figure class="entry-thumb">
+    <img src="../assets/thumbs/2026-04-23/4.svg" alt="Stanford AI Index 2026 — US vs China investment">
+    <figcaption class="caption">SVG 致敬 Stanford HAI 学术年报 cardinal 红 + 衬线 hierarchy</figcaption>
+  </figure>
+</article>
 
-  <!-- ═══════════════════════ META ═══════════════════════ -->
-  <section class="meta-section">
-    <div class="container">
-      <h4>调研元数据</h4>
-      <h2>本日调研统计</h2>
-      <div class="meta-grid">
-        <div class="meta-card">
-          <h4>成功抓取源</h4>
-          <p>GitHub · HN · X/Twitter · Lovable · v0.dev · SaaSFrame · Muzli</p>
-        </div>
-        <div class="meta-card">
-          <h4>访问受阻源</h4>
-          <p>Awwwards（403）· Dribbble（403）· Muz.li 详情页（403）· CFO Silvia（403）</p>
-        </div>
-        <div class="meta-card">
-          <h4>搜索查询总数</h4>
-          <p>21 次 WebSearch<br/>14 次 WebFetch（8 次 403）</p>
-        </div>
-        <div class="meta-card">
-          <h4>精选保留</h4>
-          <p>6 / ~30 候选<br/>筛选率 20%</p>
-        </div>
-        <div class="meta-card">
-          <h4>调研时段</h4>
-          <p>2026-04-23<br/>Asia/Shanghai UTC+8</p>
-        </div>
-        <div class="meta-card">
-          <h4>Vibe-Code 工具分布</h4>
-          <p>Claude Code × 2<br/>Lovable × 1<br/>v0 × 1<br/>AI-assisted × 2</p>
-        </div>
-      </div>
+<!-- ─── Entry 5: The Pudding · Happy Map ─── -->
+<article class="entry">
+  <div class="entry-body">
+    <div class="entry-number">05 / 06</div>
+    <div class="entry-title-row">
+      <h2><a href="https://pudding.cool/" target="_blank" rel="noopener">The Pudding · Happy Map</a></h2>
+      <span class="badge badge-type">Data Journalism</span>
     </div>
-  </section>
+    <div class="entry-meta">出品方：<strong>The Pudding</strong> · Essay #215 · Feb 2026</div>
+    <div class="entry-topic">100,000 个用户提交的"快乐瞬间"按情绪 + 地理双维度映射</div>
+    <ul class="entry-highlights">
+      <li>米黄 <code>#fff8ef</code> 偏温的纸感底 + 5 色大胆 categorical palette：<code>#ffd166</code> 黄 (joy) / <code>#ef476f</code> 粉 (love) / <code>#06a77d</code> 绿 (peace) / <code>#118ab2</code> 蓝 (wonder) / <code>#9d4edd</code> 紫 (awe) — 是 Pudding 标志性的"饱和但不刺眼"</li>
+      <li>Display 用 <strong>Playfair Display 700 weight</strong> 画 "100,000" 做数字锚点，下方 italic 副标 — 衬线头条 + italic 副标题是 Pudding 的编辑风签名</li>
+      <li>抽象大陆轮廓只用 12% 透明黑 silhouette，数据点直接散在上方，radius 3-8px 反映情绪强度 — 地图做背景、数据做前景的反直觉反转</li>
+      <li>底部 legend 5 色并排、SF Mono 9px ALL-CAPS 字距 1.5 — 编辑感的类别标注，不是"通用 D3 tooltip"</li>
+      <li>顶部 "#215 · FEB 2026" 用 mono 做档案号，强化"这是一期期刊不是一篇 blog post"的序列感</li>
+    </ul>
+    <div class="rating"><span class="rating-label">审美评分</span><span class="stars">★★★★</span><span style="color:var(--ink-3)">★</span></div>
+  </div>
+  <figure class="entry-thumb">
+    <img src="../assets/thumbs/2026-04-23/5.svg" alt="The Pudding — Happy Map: 100,000 moments of human happiness">
+    <figcaption class="caption">SVG 致敬 Pudding 5 色 categorical + Playfair serif 编辑风</figcaption>
+  </figure>
+</article>
+
+<!-- ─── Entry 6: The Pudding · Infertility Journey ─── -->
+<article class="entry">
+  <div class="entry-body">
+    <div class="entry-number">06 / 06</div>
+    <div class="entry-title-row">
+      <h2><a href="https://pudding.cool/" target="_blank" rel="noopener">The Pudding · Infertility Journey</a></h2>
+      <span class="badge badge-star">★ 推荐</span>
+      <span class="badge badge-type">Data Journalism</span>
+    </div>
+    <div class="entry-meta">出品方：<strong>The Pudding</strong> · Essay #216 · Mar 2026</div>
+    <div class="entry-topic">IVF 经历的双视角并列叙事 —— 同一主题、两个女人、两条时间线</div>
+    <ul class="entry-highlights">
+      <li>暖灰 <code>#f2f0ec</code> 底色 + 深青 <code>#2e5c5b</code> / 粉 <code>#c56b85</code> 双 persona 对照色 — 色彩情绪克制温柔、不用标准红绿警示色（医疗主题的情感克制）</li>
+      <li>两条水平 timeline 2.8px 线宽 + milestones 用 7-12px 半径 filled circle 表示，circle radius 反映事件权重（诊断 8px / 移植 11px / 出生 12px）</li>
+      <li>两条 timeline 之间垂直 1px dashed <code>#d8d5cf</code> connector 在 3 个时间锚点做对齐，视觉上暗示"同一时段，两种经历" —— 这是做 FP&amp;A 对比式 dashboard 可借鉴的结构</li>
+      <li>Playfair italic "told from two perspectives" + SF Mono 9-11px ALL-CAPS 做 milestone 标签，双字体系统承担"情绪 / 数据"两种信息</li>
+      <li>底部 serif italic 14px "Scroll to walk through..." 作为交互引导，不抢主视觉，最低限度的 onboarding</li>
+    </ul>
+    <div class="rating"><span class="rating-label">审美评分</span><span class="stars">★★★★★</span></div>
+  </div>
+  <figure class="entry-thumb">
+    <img src="../assets/thumbs/2026-04-23/6.svg" alt="The Pudding — IVF Journey dual timeline">
+    <figcaption class="caption">SVG 致敬 Pudding 双轨并行叙事 · 可迁移到 FP&amp;A 多 BU 对比</figcaption>
+  </figure>
+</article>
+
+</div>
+</section>
+
+<div class="trends-wrap">
+  <div class="container">
+    <section class="trends">
+      <h2>Weekly · 本周趋势观察</h2>
+      <p>
+        2026 Q1 最优秀的数据可视化集中在两端：<em>一端</em>是 McKinsey / CB Insights / a16z / Stanford HAI 这类研究机构年报，以<strong>克制极简为纪律</strong>，用单色调的浓淡色阶 + small multiples 消化极大数据密度；<em>另一端</em>是 The Pudding 为代表的数据新闻实验室，把<strong>色彩和字体当叙事工具</strong>，用大字号衬线 + 饱和 categorical palette 让单一情绪跃然纸上。中间地带 —— 常规金融媒体图表、通用产品 dashboard —— 反而被挤压最严重。FP&amp;A 若要突破，不是在两端中间妥协，而是<em>旗帜鲜明选一端</em>：给老板看年度复盘就向前者学纪律，给内部做主题探索就向后者学表达。
+      </p>
+    </section>
+  </div>
+</div>
+
+<div class="container">
+<section class="metadata">
+  <h3>调研元数据 · 本期透明度</h3>
+  <div class="metadata-grid">
+    <div class="m">调研耗时 <strong>20<span>min</span></strong></div>
+    <div class="m">WebSearch <strong>10</strong></div>
+    <div class="m">WebFetch <strong>8</strong></div>
+    <div class="m">候选 → 精选 <strong>15 → 6</strong></div>
+  </div>
+  <div class="metadata-sources">
+    <strong>成功访问的源</strong>
+    McKinsey Global Institute · a16z State of AI · Stanford HAI AI Index 2026 · The Pudding · CB Insights (partial)
+    <strong>受限 / 失败源</strong>
+    Bloomberg Graphics (HTTP 403) · Information is Beautiful Awards 2025 (HTTP 404) · Stripe 2025 Annual (外部 PDF 文件无法直接解析) · McKinsey "2025 in Charts" 专题页 (timeout 60s，后以其他 MGI 页面补齐)
+    <strong>生成说明</strong>
+    本期由 Claude Code 本地 session 手工调研并生成，耗时约 20 分钟 / 10 WebSearch / 8 WebFetch。缩略图全部为"向原作致敬的简化重绘"SVG，非外部原图（远程 agent sandbox 屏蔽外部图片 CDN，本地策略保持一致以便明日 cron 自动化时口径统一）。
+  </div>
+</section>
+</div>
 
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <span>← <a href="../index.html">返回目录</a></span>
-    <span>Vibe-Coded Dashboards Research · 2026-04-23 · Powered by Claude Code</span>
+    <div>Vibe · Dashboards · <em style="font-style:italic">for an FP&amp;A audience</em></div>
+    <div><a href="../index.html">← Back to index</a></div>
   </div>
 </footer>
 
