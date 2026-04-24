@@ -1,33 +1,4 @@
 <!DOCTYPE html>
-<!--
-  ═══════════════════════════════════════════════════════════
-  Daily report template · used by Claude Daily Research agent
-  ═══════════════════════════════════════════════════════════
-
-  Every day the agent:
-  1. cp daily/_template.html → daily/YYYY-MM-DD.html
-  2. Read + Edit the new file — replace every __TOKEN__ placeholder
-  3. Insert <article class="entry"> blocks BEFORE <!-- ENTRIES_INSERT_ABOVE -->
-  4. Update index.html via its own marker
-
-  PLACEHOLDER TOKENS (replace all of these):
-    __DATE_ISO__          e.g. 2026-04-24
-    __DATE_DOTTED__       e.g. 2026 · 04 · 24
-    __META_DESCRIPTION__  ≤ 80 chars summary
-    __HERO_EYEBROW__      e.g. "Day 002 · Research Reports"
-    __HERO_HEADLINE__     big serif headline, can include <em>
-    __HERO_SUBTITLE__     2-3 sentence intro
-    __STEP2_MINUTES__     integer
-    __WEBSEARCH_COUNT__   integer
-    __WEBFETCH_COUNT__    integer
-    __TOTAL_CANDIDATES__  integer
-    __KEPT_COUNT__        integer (= number of picks today)
-    __SUCCESS_SOURCES__   comma-joined list
-    __FAILED_SOURCES__    comma-joined list or "(none)"
-    __GENERATION_NOTE__   1-2 sentence transparency note
-
-  Do NOT remove <!-- ENTRIES_INSERT_ABOVE --> — it stays as anchor for Edits.
--->
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -47,7 +18,7 @@
 
 <div class="container">
   <nav class="breadcrumb">
-    <a href="../index.html">← 返回目录</a> &nbsp;/&nbsp; <em>__DATE_ISO__</em>
+    <a href="../index.html">← 返回目录</a> &nbsp;/&nbsp; <em>__DATE_CRUMB__</em>
   </nav>
 </div>
 
